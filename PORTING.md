@@ -12,3 +12,5 @@ The source is organized; its legacy composition is not the new backend contract.
 | Own `.official_*` / `.system_*` imports | Owned inside this component; retain real domain state and replay, not a second simulated model | source retained |
 
 Production key custody, durable registry and history persistence, root/controller recovery, authorization, signed replay, stale writes, jobs after view close, lifecycle cleanup, and actual browser/agent operations require qualification. Source AST validity and the unsigned reconstruction fixture are not those gates. No server or operator scripts are enabled here.
+
+The preserved28-file command/fixture cohort under `legacy/scripts/` also needs a deliberate source-path, namespace, configuration, custody and side-effect port. No setup/install hook should execute it. Static syntax and byte fidelity do not qualify its old tests or operator workflows.
