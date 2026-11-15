@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import base64,hashlib,json,sys
 from pathlib import Path
-sys.path.insert(0,str(Path(__file__).resolve().parents[2]))
-from steward.official_content import reconstruct_scratch_history
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'src'))
+from webos_publication.official_content import reconstruct_scratch_history
 
 def ident(v):return base64.urlsafe_b64encode(hashlib.sha256(v).digest()).rstrip(b'=').decode()
 def j(v):return json.dumps(v,separators=(',',':'))
